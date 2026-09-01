@@ -62,7 +62,7 @@ export function render(){
   const experienceHtml = [
     jobHtml(
       t("nortalTitle"), t("nortalCompany"), t("nortalDates"), t("nortalLocation"),
-      "Java 17, Spring Boot 3.0, Spring Security, Kafka, Terraform, AWS, Docker, Kubernetes",
+      "Java 17, Spring Boot 3.0, Spring Security, Kafka, Redis, Kinesis, SQS, Terraform, AWS, Docker, Kubernetes",
       [t("nortalBullet1"), t("nortalBullet2"), t("nortalBullet3"), t("nortalBullet4")],
       cli.nortal
     ),
@@ -100,7 +100,7 @@ export function render(){
       { label: "Front End", items: ["Angular", "Ionic", "HTML", "CSS", "SCSS"] },
       { label: "C / C++", items: ["C / C++", "Qt5 / Qt6", "QML", "CMake / Make", "QMake"] },
       { label: "Mobile", items: ["Flutter", "Dart", "Xamarin", "Android (Java / Kotlin / JNI)"] },
-      { label: "Databases", items: ["PostgreSQL", "Oracle SQL", "MongoDB"] },
+      { label: "Databases", items: ["PostgreSQL", "Oracle SQL", "MongoDB", "Redis"] },
       { label: "Linux Distros", items: ["Ubuntu", "Manjaro", "Debian", "RHEL"] },
       { label: "General", items: ["Linux", "Git"] },
     ]),
