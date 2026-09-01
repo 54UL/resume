@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:54ul.github.io)",
+      "Bash(python -c \"from PIL import Image; img = Image.open\\(''E:/repos3/resume/og-image.png''\\); print\\(f''Dimensions: {img.size[0]}x{img.size[1]}''\\)\")",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\(''E:/repos3/resume/og-image.png''\\); print\\(f''Dimensions: {img.size[0]}x{img.size[1]}''\\)\")",
+      "Bash(magick identify:*)"
+    ]
+  }
+}
