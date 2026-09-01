@@ -49,7 +49,7 @@ const TOKEN_META = [
 function safeGet(key){ try { return localStorage.getItem(key); } catch(e){ return null; } }
 function safeSet(key, val){ try { localStorage.setItem(key, val); } catch(e){} }
 
-const themeState = { preset: "graphite", mode: "auto", overrides: {} };
+const themeState = { preset: "copper", mode: "dark", overrides: {} };
 
 function loadTheme(){
   try {
@@ -598,7 +598,7 @@ const FONT_THEMES = {
   "ubuntu":         { label: "Ubuntu",         body: '"Ubuntu", ui-sans-serif, Arial, sans-serif',         heading: '"Ubuntu", sans-serif' },
 };
 
-let currentFont = safeGet("resume-font") || "source-sans";
+let currentFont = safeGet("resume-font") || "ubuntu";
 
 function applyFont(key){
   const ft = FONT_THEMES[key] || FONT_THEMES["source-sans"];
