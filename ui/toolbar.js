@@ -1,6 +1,6 @@
 import { t, currentLang, setLang } from "../domain/i18n.js";
 import { safeSet } from "../domain/storage.js";
-import { FONT_THEMES, getCurrentFont, setFont, applyFont } from "../domain/font-engine.js";
+import { FONT_THEMES, FONT_CATEGORIES, getCurrentFont, setFont, applyFont } from "../domain/font-engine.js";
 import { render } from "./resume.js";
 
 export function updateUIStrings(){
@@ -24,12 +24,18 @@ export function initLangControl(){
 
 export function initFontControl(){
   const select = document.getElementById("font-select");
-  Object.entries(FONT_THEMES).forEach(([key, ft]) => {
-    const opt = document.createElement("option");
-    opt.value = key;
-    opt.textContent = ft.label;
-    opt.style.fontFamily = ft.body;
-    select.appendChild(opt);
+  const entries = Object.entries(FONT_THEMES);
+  FONT_CATEGORIES.forEach(cat => {
+    const group = document.createElement("optgroup");
+    group.label = cat;
+    entries.filter(([, ft]) => ft.category === cat).forEach(([key, ft]) => {
+      const opt = document.createElement("option");
+      opt.value = key;
+      opt.textContent = ft.label;
+      opt.style.fontFamily = ft.body;
+      group.appendChild(opt);
+    });
+    select.appendChild(group);
   });
   const current = getCurrentFont();
   select.value = current;
