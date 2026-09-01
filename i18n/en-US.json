@@ -2,7 +2,6 @@
   "name": "Saul Aceves",
   "location": "Guadalajara, Jalisco, Mexico",
   "email": "54ulacvs@gmail.com",
-  "phone": "+52 33 1965 8586",
   "linkedinLabel": "LinkedIn",
   "githubLabel": "GitHub",
 
@@ -85,5 +84,6 @@
   "toolbarThemeTitle": "Customize theme",
   "toolbarLangLabel": "Language",
   "toolbarFontLabel": "Font",
+  "toolbarThemeLabel": "Theme",
   "credit": "Theme and language choices are remembered on this device only."
 }

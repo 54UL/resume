@@ -41,6 +41,7 @@ export const FONT_THEMES = {
   "space-mono":     { label: "Space Mono",         category: "Monospaced", body: '"Space Mono", ui-monospace, monospace',                    heading: '"Space Mono", monospace' },
   "courier-prime":  { label: "Courier Prime",      category: "Monospaced", body: '"Courier Prime", "Courier New", monospace',               heading: '"Courier Prime", monospace' },
   "anonymous-pro":  { label: "Anonymous Pro",      category: "Monospaced", body: '"Anonymous Pro", ui-monospace, monospace',                 heading: '"Anonymous Pro", monospace' },
+  "hermit":         { label: "Hermit",             category: "Monospaced", body: '"Hermit", ui-monospace, monospace',                        heading: '"Hermit", monospace' },
 };
 
 let currentFont = safeGet("resume-font") || "ubuntu";

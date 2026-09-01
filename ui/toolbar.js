@@ -8,6 +8,9 @@ export function updateUIStrings(){
   document.getElementById("credit-text").textContent = t("credit");
   document.getElementById("lang-label").textContent = t("toolbarLangLabel");
   document.getElementById("font-label").textContent = t("toolbarFontLabel");
+  document.getElementById("theme-label").textContent = t("toolbarThemeLabel");
+  document.getElementById("theme-btn").title = t("toolbarThemeTitle");
+  document.getElementById("theme-btn-text").textContent = t("toolbarThemeTitle");
 }
 
 export function initLangControl(){
@@ -37,6 +40,7 @@ export function initFontControl(){
     });
     select.appendChild(group);
   });
+  
   const current = getCurrentFont();
   select.value = current;
   applyFont(current);
