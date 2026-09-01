@@ -1,0 +1,8 @@
+{
+  "graphite": { "label": "Graphite",  "neutralH": 213, "neutralS": 6,  "accentH": 213, "accentS": 6,  "highlightH": 213, "highlightS": 6,  "cautionH": 213, "cautionS": 6  },
+  "sapphire": { "label": "Sapphire",  "neutralH": 213, "neutralS": 22, "accentH": 213, "accentS": 58, "highlightH": 33,  "highlightS": 62, "cautionH": 283, "cautionS": 40 },
+  "emerald":  { "label": "Emerald",   "neutralH": 152, "neutralS": 18, "accentH": 152, "accentS": 42, "highlightH": 332, "highlightS": 46, "cautionH": 45,  "cautionS": 55 },
+  "amethyst": { "label": "Amethyst",  "neutralH": 262, "neutralS": 16, "accentH": 262, "accentS": 36, "highlightH": 82,  "highlightS": 38, "cautionH": 350, "cautionS": 48 },
+  "copper":   { "label": "Copper",    "neutralH": 23,  "neutralS": 20, "accentH": 23,  "accentS": 62, "highlightH": 203, "highlightS": 54, "cautionH": 140, "cautionS": 35 },
+  "rose":     { "label": "Rose",      "neutralH": 340, "neutralS": 16, "accentH": 340, "accentS": 48, "highlightH": 160, "highlightS": 42, "cautionH": 48,  "cautionS": 55 }
+}

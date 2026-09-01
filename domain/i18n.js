@@ -1,6 +1,6 @@
-const locales = {};
+import { safeGet } from "./storage.js";
 
-function safeGet(key){ try { return localStorage.getItem(key); } catch(e){ return null; } }
+const locales = {};
 
 export let currentLang = safeGet("resume-lang") || "en-US";
 
