@@ -1,4 +1,5 @@
 import { t } from "./i18n.js";
+import { getConfig } from "./app.js";
 
 const ICONS = {
   mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>',
@@ -13,10 +14,8 @@ const ICONS = {
   tool: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 1 1 5.4-5.4z"/></svg>',
 };
 
-const CONTACT = {
-  linkedinUrl: "https://linkedin.com/in/saul-aceves-89a988b3",
-  githubUrl: "https://github.com/54UL",
-};
+function contact(){ return getConfig().contact || {}; }
+function companyLI(){ return getConfig().companyLinkedIn || {}; }
 
 function esc(s){
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -71,36 +70,37 @@ function groupedCardHtml(icon, title, groups){
 }
 
 export function render(){
+  const cli = companyLI();
   const experienceHtml = [
     jobHtml(
       t("nortalTitle"), t("nortalCompany"), t("nortalDates"), t("nortalLocation"),
       "Java 17, Spring Boot 3.0, Spring Security, Kafka, Terraform, AWS, Docker, Kubernetes",
       [t("nortalBullet1"), t("nortalBullet2"), t("nortalBullet3"), t("nortalBullet4")],
-      "https://www.linkedin.com/company/nortal/"
+      cli.nortal
     ),
     jobHtml(
       t("sistemasTitle"), t("sistemasCompany"), t("sistemasDates"), t("sistemasLocation"),
       "Java, JSP, Maven, SQL, Batch Processing",
       [t("sistemasBullet1"), t("sistemasBullet2"), t("sistemasBullet3")],
-      "https://www.linkedin.com/company/internacional-de-sistemas-de-imagen/"
+      cli.sistemas
     ),
     jobHtml(
       t("atrTitle"), t("atrCompany"), t("atrDates"), t("atrLocation"),
       "C++, Qt5, Java, JNI, Azure Pipelines, Linux",
       [t("atrBullet1"), t("atrBullet2"), t("atrBullet3")],
-      "https://www.linkedin.com/company/aaboron/"
+      cli.atr
     ),
     jobHtml(
       t("urbanissaTitle"), t("urbanissaCompany"), t("urbanissaDates"), t("urbanissaLocation"),
       "Flutter, .NET Core, Node.js / TypeScript, Angular, SQL",
       [t("urbanissaBullet1"), t("urbanissaBullet2")],
-      "https://www.linkedin.com/company/urbanissa/"
+      cli.urbanissa
     ),
     jobHtml(
       t("jarabesoftTitle"), t("jarabesoftCompany"), t("jarabesoftDates"), t("jarabesoftLocation"),
       "C++, Qt5, Ionic, Loopback 3 (Node.js / Express), Google Cloud",
       [t("jarabesoftBullet1"), t("jarabesoftBullet2")],
-      "https://www.linkedin.com/company/jarabe-soft/"
+      cli.jarabesoft
     ),
   ].join("");
 
@@ -148,8 +148,8 @@ export function render(){
     </header>
     <div class="contact-row">
       <span class="contact-chip c-pin"><span class="ico">${ICONS.pin}</span>${esc(t("location"))}</span>
-      <a class="contact-chip link c-li" href="${CONTACT.linkedinUrl}" target="_blank" rel="noopener"><span class="ico">${ICONS.linkedin}</span>${esc(t("linkedinLabel"))}</a>
-      <a class="contact-chip link c-gh" href="${CONTACT.githubUrl}" target="_blank" rel="noopener"><span class="ico">${ICONS.github}</span>${esc(t("githubLabel"))}</a>
+      <a class="contact-chip link c-li" href="${contact().linkedinUrl || "#"}" target="_blank" rel="noopener"><span class="ico">${ICONS.linkedin}</span>${esc(t("linkedinLabel"))}</a>
+      <a class="contact-chip link c-gh" href="${contact().githubUrl || "#"}" target="_blank" rel="noopener"><span class="ico">${ICONS.github}</span>${esc(t("githubLabel"))}</a>
     </div>
     <hr class="rule">
     <p class="summary">${esc(t("summary"))}</p>

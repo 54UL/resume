@@ -1,0 +1,39 @@
+{
+  "siteUrl": "https://54ul.github.io/resume/",
+
+  "og": {
+    "type": "website",
+    "title": "Saul Aceves — Software Engineer",
+    "description": "Backend engineer with 6+ years of experience — Java, Spring Boot, .NET, Node.js, C++, Cloud. Currently building services for T-Mobile's e-commerce platform at Nortal.",
+    "image": "og-image.png",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "locale": "en_US",
+    "localeAlternate": "es_MX"
+  },
+
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Saul Aceves — Software Engineer",
+    "description": "Backend engineer with 6+ years of experience — Java, Spring Boot, .NET, Node.js, C++, Cloud."
+  },
+
+  "meta": {
+    "title": "Saul Aceves — Resume",
+    "description": "Backend engineer with 6+ years of experience — Java, Spring Boot, .NET, Node.js, C++, Cloud. Currently building services for T-Mobile's e-commerce platform at Nortal.",
+    "author": "Saul Aceves"
+  },
+
+  "contact": {
+    "linkedinUrl": "https://linkedin.com/in/saul-aceves-89a988b3",
+    "githubUrl": "https://github.com/54UL"
+  },
+
+  "companyLinkedIn": {
+    "nortal": "https://www.linkedin.com/company/nortal/",
+    "sistemas": "https://www.linkedin.com/company/internacional-de-sistemas-de-imagen/",
+    "atr": "https://www.linkedin.com/company/aaboron/",
+    "urbanissa": "https://www.linkedin.com/company/urbanissa/",
+    "jarabesoft": "https://www.linkedin.com/company/jarabe-soft/"
+  }
+}
