@@ -62,7 +62,7 @@ export function render(){
   const experienceHtml = [
     jobHtml(
       t("nortalTitle"), t("nortalCompany"), t("nortalDates"), t("nortalLocation"),
-      "Java 17, Spring Boot 3.0, Spring Security, Kafka, Redis, Kinesis, SQS, Terraform, AWS, Docker, Kubernetes",
+      "Java 17, Spring Boot 3.0, Spring Security, GraphQL, Kafka, Redis, Kinesis, SQS, Terraform, AWS, Docker, Kubernetes",
       [t("nortalBullet1"), t("nortalBullet2"), t("nortalBullet3"), t("nortalBullet4")],
       cli.nortal
     ),
@@ -74,19 +74,19 @@ export function render(){
     ),
     jobHtml(
       t("atrTitle"), t("atrCompany"), t("atrDates"), t("atrLocation"),
-      "C++, Qt5, Java, JNI, Azure Pipelines, Linux",
+      "C++, Qt5, Java, JNI, React, Angular, Azure Pipelines, Linux",
       [t("atrBullet1"), t("atrBullet2"), t("atrBullet3")],
       cli.atr
     ),
     jobHtml(
       t("urbanissaTitle"), t("urbanissaCompany"), t("urbanissaDates"), t("urbanissaLocation"),
-      "Flutter, .NET Core, Node.js / TypeScript, Angular, SQL",
+      "Flutter, .NET Core, Node.js / TypeScript, Angular, React, SQL",
       [t("urbanissaBullet1"), t("urbanissaBullet2")],
       cli.urbanissa
     ),
     jobHtml(
       t("jarabesoftTitle"), t("jarabesoftCompany"), t("jarabesoftDates"), t("jarabesoftLocation"),
-      "C++, Qt5, Ionic, Loopback 3 (Node.js / Express), Google Cloud",
+      "C++, Qt5, Ionic, React, Loopback 3 (Node.js / Express), Google Cloud",
       [t("jarabesoftBullet1"), t("jarabesoftBullet2")],
       cli.jarabesoft
     ),
@@ -97,7 +97,7 @@ export function render(){
       { label: "Java", items: ["Java (8\u201321)", "Spring Boot", "Spring Security", "Spring Cloud Config", "Spring Batch", "Spring Data", "Maven", "Gradle"] },
       { label: ".NET / C#", items: ["C#", ".NET Framework", ".NET Core (1.0\u20136.0)", "Entity Framework", "SignalR", "UWP", "Cake"] },
       { label: "JavaScript / TypeScript", items: ["Node.js", "TypeScript", "Loopback", "Electron"] },
-      { label: "Front End", items: ["Angular", "Ionic", "HTML", "CSS", "SCSS"] },
+      { label: "Front End", items: ["React", "Angular", "Ionic", "HTML", "CSS", "SCSS"] },
       { label: "C / C++", items: ["C / C++", "Qt5 / Qt6", "QML", "CMake / Make", "QMake"] },
       { label: "Mobile", items: ["Flutter", "Dart", "Xamarin", "Android (Java / Kotlin / JNI)"] },
       { label: "Databases", items: ["PostgreSQL", "Oracle SQL", "MongoDB", "Redis"] },
@@ -116,7 +116,7 @@ export function render(){
       { label: t("qualityIntegration"), items: ["Cucumber / Gherkin", "Selenium", "REST Assured", "Testcontainers", "Cypress", "Karate", "Postman / Newman"] },
     ]),
     groupedCardHtml("code", t("skillOther"), [
-      { label: t("skillData"), items: ["Apache Kafka", "Apache ActiveMQ", "REST APIs"] },
+      { label: t("skillData"), items: ["Apache Kafka", "Apache ActiveMQ", "GraphQL", "REST APIs"] },
       { label: t("skillERP"), items: ["Epicor", "Odoo"] },
       { label: t("skillAI"), items: [t("aiSkill1"), t("aiSkill2"), t("aiSkill3"), t("aiSkill5")] },
     ]),
