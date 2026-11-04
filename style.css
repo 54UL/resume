@@ -384,6 +384,13 @@ p.tagline {
   font-weight: 600;
 }
 
+p.tagline .accent {
+  display: block;
+  margin-top: 0.15rem;
+  font-weight: 500;
+  font-size: 0.82rem;
+}
+
 .status-pill {
   display: inline-flex;
   align-items: center;

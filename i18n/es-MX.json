@@ -5,11 +5,11 @@
   "linkedinLabel": "LinkedIn",
   "githubLabel": "GitHub",
 
-  "tagline": "Ingeniero de Software",
-  "taglineAccent": "— Java · .NET · Node.js · C++17 · Cloud",
+  "tagline": "Ingeniero Full-Stack",
+  "taglineAccent": "Angular · React · Java · .NET · Node.js · C++17 · Cloud",
   "statusPill": "Abierto a nuevas oportunidades",
 
-  "summary": "Ingeniero backend con más de 6 años de experiencia, actualmente desarrollando servicios en Java 17 / Spring Boot 3.0 para la plataforma de e-commerce de T-Mobile en Nortal — pipelines de eventos con Kafka, Spring Security, infraestructura AWS con Terraform y Kubernetes en producción. Experiencia previa en .NET Core, Node.js y C++ en fintech, bienes raíces y sistemas embebidos.",
+  "summary": "Ingeniero full-stack con más de 7 años de experiencia y un fuerte enfoque en backend, actualmente desarrollando servicios en Java 17 / Spring Boot 3.0 para la plataforma de e-commerce de T-Mobile en Nortal — pipelines de eventos con Kafka, Spring Security, infraestructura AWS con Terraform y Kubernetes en producción. En el frontend, competente en Angular y React para construir aplicaciones web responsivas y listas para producción. Experiencia previa en .NET Core, Node.js y C++ en fintech, bienes raíces y sistemas embebidos.",
 
   "sectionExperience": "Experiencia",
   "sectionSkills": "Habilidades",
